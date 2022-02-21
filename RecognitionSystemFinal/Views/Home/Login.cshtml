@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<form class="login-form" onsubmit="document.location.href = `${document.location.origin}/Admin/AdminDashboard`; return false;">
+    <div class="login-header">
+        <h1>@ViewData["Title"]</h1>
+        <p>Sign in and start managing your employees!</p>
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="Enter Username" name="un" required>
+    </div>
+    <div class="input-container">
+        <input type="password" placeholder="Enter Password" name="pswrd" required>
+    </div>
+    <div class="input-container">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+    </div>
+ 
+    <button class="login-button" type="submit">Login</button>
+
+</form>
+
+

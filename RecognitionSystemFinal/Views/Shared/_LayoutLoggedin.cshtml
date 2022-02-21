@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjectName</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjectLogo</a>
+            </div>
+              <div class="navbar-right">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="NotificationPage">Notifs</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+     <div class="main-container">
+        <main role="main" class="main">
+            @RenderBody()
+        </main>
+    </div>
+  
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

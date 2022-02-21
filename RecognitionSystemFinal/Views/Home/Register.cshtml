@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Registration";
+}
+<form class="register-form">
+    <div class="register-header">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    <div class="input-container">
+        <input type="number" placeholder="Enter ID" name="id" required>
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="Enter Username" name="un" required>
+    </div>
+      <div class="input-container">
+        <input type="text" placeholder="Enter First Name" name="fn" required>
+    </div>
+    <div class="input-container">
+        <input type="text" placeholder="Enter Last Name" name="ln" required>
+    </div>
+    <div class="input-container">
+        <input type="password" placeholder="Enter Password" name="pswrd" required>
+    </div>
+    <div class="input-container">
+        <input type="password" placeholder="Re-enter Password" name="repswrd" required> 
+    </div>
+   
+    <button class="register-button" formaction="" type="submit">Register</button>
+</form>

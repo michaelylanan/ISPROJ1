@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Notification Page";
+    Layout = "~/Views/Shared/_LayoutLoggedin.cshtml";
+}
+
+<h1 class="notification-header"> Notifications</h1>
+
+<table>
+
+  <tr>
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Purchased Reward Name</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>234567</td>
+    <td>Michael Ylanan</td>
+    <td>20% Discount on Starbucks</td>
+    <td> <select name="reward-status" id="rew">
+    <option value="prcoessing">Processing</option>
+    <option value="claimnow">Claim Reward Now!</option>
+    <option value="opel">Unclaimed</option>
+    <option value="audi">Claimed</option>
+  </select></td>
+  </tr>
+
+  <tr>
+    <td>456123</td>
+    <td> Nicole Cepria</td>
+    <td>150 Pesos Gift Card</td>
+    <td><select name="reward-status" id="rew">
+    <option value="prcoessing">Processing</option>
+    <option value="claimnow">Claim Reward Now!</option>
+    <option value="opel">Unclaimed</option>
+    <option value="audi">Claimed</option>
+  </select></td>
+  </tr>
+
+  <tr>
+    <td>349038</td>
+    <td>Miguel Magallanes</td>
+    <td>10% Discount Girodano</td>
+    <td><select name="reward-status" id="rew">
+    <option value="prcoessing">Processing</option>
+    <option value="claimnow">Claim Reward Now!</option>
+    <option value="opel">Unclaimed</option>
+    <option value="audi">Claimed</option>
+  </select></td>
+  </tr>
+
+  <tr>
+    <td>565728</td>
+    <td> Miguel Del Rosario</td>
+    <td>150 Pesos Gift Card</td>
+    <td><select name="reward-status" id="rew">
+    <option value="prcoessing">Processing</option>
+    <option value="claimnow">Claim Reward Now!</option>
+    <option value="opel">Unclaimed</option>
+    <option value="audi">Claimed</option>
+  </select></td><
+  </tr>
+
+</table>
+
+ <a  class="notificationback-link" href ="AdminDashboard">Back</a>
