@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Reports";
+    Layout = "~/Views/Shared/_LayoutLoggedin.cshtml";
+}
+
+<div class="container" style="margin-top:50px; font-size:18px">
+      External File: <input  value="file.." readonly style="font-size:18px"/>
+      <button style="background-color: #4CAF50; border: none; color: white; padding: 5px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 18px; margin: 4px 2px;cursor: pointer;border-radius:5px" onclick="myFunction()">Choose</button>
+
+      <div style="margin-top:50px; border:0.5px gray solid; padding:5px; display:none" id="myDIV">
+          <div><h2>Sales Data:Preview</h2></div>
+          <table> 
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+               <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </table>
+      </div>
+
+     <div class="container" style="margin-top:80px">
+         <div><h2>Generate Reports</h2></div>
+           <div class="row">
+               <figure class="column" style="padding:5px">
+                    <img src="~/img/forecastslogo.png" style="width:300px; height:260px; display: block; margin-left: auto;margin-right: auto;">
+                    <figcaption> <a class="option-link" href ="~/Admin/Forecasts" style="margin:auto; width:auto">Forecasts</a></figcaption>
+               </figure>
+             <figure class="column" style="padding:5px">
+                    <img src="~/img/ranking.png" style="width:300px; height:260px; display: block; margin-left: auto;margin-right: auto;">
+                    <figcaption> <a class="option-link" href ="~/Admin/Ranking" style="margin:auto; width:auto">Ranking</a></figcaption>
+               </figure>
+               <figure class="column" style="padding:5px">
+                    <img src="~/img/Thinkwise-Diagnostic-Assessments.png" style="width:300px; height:260px; display: block; margin-left: auto;margin-right: auto;">
+                    <figcaption> <a class="option-link" href ="~/Admin/Diagnostic" style="margin:auto; width:auto" >Diagnostic Analysis</a></figcaption>
+               </figure>
+              <figure class="column" style="padding:5px">
+                    <img src="~/img/descriptive.png" style="width:300px; height:260px; display: block; margin-left: auto;margin-right: auto;">
+                    <figcaption> <a class="option-link" href ="~/Admin/Descriptive" style="margin:auto; width:auto">Descriptive Analysis</a></figcaption>
+               </figure>
+           </div> 
+     </div>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
